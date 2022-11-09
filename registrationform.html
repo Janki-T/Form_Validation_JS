@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <script src="https://kit.fontawesome.com/d32195731b.js" crossorigin="anonymous"></script>
+    <title>Form_Validation</title>
+    <script src="https://kit.fontawesome.com/d32195731b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <div class="user_form">
+
+            <form  id="myform" name="my_Form" onsubmit="formValidation(event)">
+                <div class="form_design">
+                    <label>First Name:</label> <span id="fname_error" class="form_error"></span>
+                   
+                    <br>
+                    <input onblur="return fullnameVal()" type="text" name="user_name_" id="f_name"
+                        placeholder="Enter Your Name">
+                    <br>
+                </div>
+
+                <div class="form_design">
+                    <label>Last Name:</label> <span id="lname_error" class="form_error"></span>
+                    <br>
+                    <input onblur="return lastnameVal()" type="text" name="user_name_" id="l_name"
+                        placeholder="Enter Your Name">
+                    <br>
+                </div>
+
+                <div class="form_design">
+                    <label>Email:</label> <span class="form_error" id="email_error"></span>
+                    <br>
+                    <input onblur="return emailVal()" type="email" name="user_email_" id="email"
+                        placeholder="Enter Your Email">
+                    <br>
+                </div>
+
+                <div class="form_design">
+                    <label>Phone:</label> <span class="form_error" id="phone_error"></span>
+                    <br>
+                    <input onblur="return phoneVal()" type="phone" name="user_phone_" id="phone"
+                        placeholder="Enter Your Phone Number">
+                    <br>
+                </div>
+
+                <div class="form_design">
+                    <label>Password:</label> <span class="form_error" id="pass_error"></span>
+                    <br>
+                    <input onblur="return passVal()" type="password" id="password" placeholder="Enter Your Password">
+                    <!-- <i class="uil uil-eye"></i>
+                    <i class="uil uil-eye-slash showHide"></i> -->
+                    <br>
+                </div>
+
+                <div class="form_design">
+                    <label>Confirom-Password:</label> <span class="form_error" id="C_pass_error"></span>
+                    <br>
+                    <input onblur="return cpassVal()" type="password" id="C_password" placeholder="Enter Your Password">
+                    <br>
+                </div>
+
+                <input type="submit" class="btn"/>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/main1.js"></script> -->
+    <!-- <script src="js/main2.js"></script> -->
+    <script src="js/commonfunction.js"></script>
+    <script src="js/storedata.js"></script>
+
+</body>
+
+</html>

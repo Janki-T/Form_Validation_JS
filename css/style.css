@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4070f4;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+form {
+    width: 500px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: rgb(156, 152, 152);
+}
+
+.form_design {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.form_error {
+    font-size: 16px;
+    color: red;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4070f4;
+    font-size: 20px;
+    color: white;
+}
+
+.form_design {
+    position: relative;
+}
+
+.form_design input {
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid #ccc;
+    background-color: aliceblue;
+}
+
+.form_design i {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateY(-100%);
+    font-size: 20px;
+    color: black;
+}
+
+span {
+    color: red;
+    font-weight: 700;
+}
+
+.btn_sing_in{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #4070f4;
+    text-decoration: underline;
+}

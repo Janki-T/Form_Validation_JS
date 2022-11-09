@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Form</h1>
+        <div class="user_form">
+
+            <form id="myform" name="my_Form" onsubmit="loginFormVal(event)">
+
+                <div class="form_design">
+                    <label>Email:</label> <span class="form_error" id="email_error"></span>
+                    <br>
+                    <input onblur="return emailVal()" type="email" name="user_email_" id="email"
+                        placeholder="Enter Your Email">
+                    <br>
+                </div>
+
+                <div class="form_design">
+                    <label>Password:</label> <span class="form_error" id="pass_error"></span>
+                    <br>
+                    <input onblur="return passVal()" type="password" id="password" placeholder="Enter Your Password">
+                    <br>
+                </div>
+
+                <input type="submit" onclick="checkdata()" class="btn" value="Login"/>
+            </form>
+            <small>Creat Account</small>
+            <span><button class="btn_sing_in" onclick="reloadRegistrationForm()">Sing Up</button></span>
+        </div>
+    </div>
+    <script src="js/commonfunction.js"></script>
+    <script src="js/loginpage.js"></script>
+</body>
+
+</html>
